@@ -14,7 +14,7 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_riva.mk
+    $(LOCAL_DIR)/lineage_tiare.mk
 
 COMMON_LUNCH_CHOICES := \
-     lineage_riva-userdebug
+     lineage_tiare-userdebug

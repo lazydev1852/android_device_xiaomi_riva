@@ -15,7 +15,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/riva
+DEVICE_PATH := device/xiaomi/tiare
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8937
@@ -25,10 +25,10 @@ TARGET_NO_BOOTLOADER := true
 TARGET_BOARD_PLATFORM := msm8937
 
 # Architecture
-TARGET_ARCH := arm64
+TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv8-a
-TARGET_CPU_ABI := arm64-v8a
-TARGET_CPU_ABI2 :=
+TARGET_CPU_ABI := armeabi-v7a
+TARGET_CPU_ABI2 :=armeabi
 TARGET_CPU_VARIANT := generic
 
 TARGET_2ND_ARCH := arm
@@ -46,7 +46,7 @@ BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
 # Assert
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
-TARGET_OTA_ASSERT_DEVICE := riva
+TARGET_OTA_ASSERT_DEVICE := tiare
 
 # Audio
 AUDIO_FEATURE_ENABLED_AAC_ADTS_OFFLOAD := true
@@ -90,9 +90,6 @@ TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
 # Charger
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
 BOARD_CHARGER_ENABLE_SUSPEND := true
-
-# DRM
-TARGET_ENABLE_MEDIADRM_64 := true
 
 # Encryption
 TARGET_HW_DISK_ENCRYPTION := true
@@ -212,4 +209,4 @@ WIFI_HIDL_FEATURE_DISABLE_AP_MAC_RANDOMIZATION := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit the common proprietary files
--include vendor/xiaomi/riva/BoardConfigVendor.mk
+-include vendor/xiaomi/tiare/BoardConfigVendor.mk

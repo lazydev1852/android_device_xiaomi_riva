@@ -18,27 +18,29 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
 
 # Inherit some common Lineage stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Inherit from riva device
+# Inherit from tiare device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+# Credits for riva tree goes to SunnyRaj84348
+
 PRODUCT_BRAND := Xiaomi
-PRODUCT_DEVICE := riva
+PRODUCT_DEVICE := tiare
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_MODEL := Redmi 5A
-PRODUCT_NAME := lineage_riva
+PRODUCT_MODEL := Redmi Go
+PRODUCT_NAME := lineage_tiare
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-TARGET_VENDOR_PRODUCT_NAME := riva
+TARGET_VENDOR_PRODUCT_NAME := tiare
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE="riva" \
-    PRODUCT_NAME="riva" \
-    PRIVATE_BUILD_DESC="riva-user 7.1.2 N2G47H V9.5.6.0.NCKMIFA release-keys"
+    TARGET_DEVICE="tiare" \
+    PRODUCT_NAME="tiare" \
+    PRIVATE_BUILD_DESC="tiare-user 8.1.0 OPM1.171019.026 V10.2.12.0.OCLMIXM release-keys"
 
-BUILD_FINGERPRINT := Xiaomi/riva/riva:7.1.2/N2G47H/V9.5.6.0.NCKMIFA:user/release-keys
+BUILD_FINGERPRINT := Xiaomi/tiare/tiare:8.1.0/OPM1.171019.026/V10.2.12.0.OCLMIXM:user/release-keys

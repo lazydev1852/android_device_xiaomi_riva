@@ -127,8 +127,8 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_CONFIG := riva_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8917
+TARGET_KERNEL_CONFIG := tiare_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/die-d_redmigo
 TARGET_COMPILE_WITH_MSM_KERNEL	:= true
 
 # Lights
@@ -136,8 +136,8 @@ TARGET_PROVIDES_LIBLIGHT := true
 
 # Shims
 TARGET_LD_SHIM_LIBS := \
-    /vendor/lib64/liblbs_core.so|libloc_shim.so \
-    /vendor/lib64/libloc_api_v02.so|libloc_shim.so
+    /vendor/lib/liblbs_core.so|libloc_shim.so \
+    /vendor/lib/libloc_api_v02.so|libloc_shim.so
 
 # Tap2Wake
 TARGET_TAP_TO_WAKE_NODE := "/proc/gesture/onoff"
